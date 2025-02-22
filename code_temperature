@@ -1,0 +1,7 @@
+temp = int(input("How much is the temperature today?"))
+if temp > 30:
+    print ("It is a hot day")
+elif temp < 30:
+    print ('It is a cold day')
+else:
+    print ("It is a pleasant day")
