@@ -1,0 +1,11 @@
+house_price = 1000000
+
+good = 0.1*1000000
+bad = 0.2*1000000
+
+good_credit = False
+
+if good_credit:
+    print (f'Your down payment is {good}')
+else:
+    print (f'Your down payment is {bad}')
