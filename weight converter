@@ -1,0 +1,12 @@
+weight = int(input("How much is your weight?"))
+conv = input("(L)bs or (K)g?")
+
+l_to_kg = weight*0.45
+kg_to_l = weight*2.2
+
+if conv == 'l' or conv == 'L':
+    print(f"Your weight is {l_to_kg}")
+elif conv == 'K' or conv == 'k':
+    print(f"Your weight is, {kg_to_l}")
+else:
+    print("Please type either l or k")
