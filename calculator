@@ -1,0 +1,32 @@
+print('Welcome to the calculator!')
+print('We can do 4 operations')
+
+while True:
+    action = int(input(' For addition, press 1 \n For subtraction, press 2 \n For multiplication, press 3 \n For division, press 4\n'))
+
+    num1 = int(input('Type your first number: '))
+    num2 = int(input('Type your second number: '))
+
+    add = num1 + num2
+    sub = num1 - num2
+    mul = num1 * num2
+    div = num1 / num2
+    
+    if action == 1:
+        print(f"The result of the addition is {num1 + num2}")
+    elif action == 2:
+        print(f"The result of the subtraction is {num1 - num2}")
+    elif action == 3:
+        print(f"The result of the multiplication is {num1 * num2}")
+    elif action == 4:
+        if num2 == 0:
+            print("Error! Division by zero is not allowed.")
+        else:
+            print(f"The result of the division is {num1 / num2}")
+    else:
+        print("Invalid input. Please select 1, 2, 3, or 4 for the operation.")
+
+    cont = input("Want to try again? (Y/N): ").strip().upper()
+    if cont == 'N':
+        print("Goodbye!")
+        break
