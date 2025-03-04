@@ -1,0 +1,16 @@
+print('Hello! Welcome to the number guessing game.\nHere, you have to guess a secret number between 1-50.')
+secret_number = 13
+guess_count = 0
+
+while True:
+    guess = int(input('Type your guess: '))
+    guess_count += 1
+
+    if guess > secret_number:
+        print('Sorry, that\'s not correct.\nYour guess is higher than the secret number')
+    elif guess < secret_number:
+        print('Sorry, that\'s not correct.\nYour guess is lower than the secret number')
+    else:
+        print('Correct guess!\nAmazing!')
+        print(f"You guessed our number in {guess_count} attempts")
+        break
